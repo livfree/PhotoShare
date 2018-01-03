@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Friends</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='photoshare.css') }}">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100,500,700|Oswald:300,400,700" rel="stylesheet">
+</head>
+<body>
+    <nav class="navigation">
+            <a href='/'>Home</a>
+            <a href='/profile'>My Profile</a>
+            <a href='/albums' method="GET">My Albums</a>
+            <a href='/friends'>My Friends</a>
+            <a href='/fsearch'>Friend Search/Recomendations</a>
+            <a href='/tsearch'>My Tag Search</a>
+            <a href='/logout'>Logout</a>
+    </nav>
+    <br />
+    <section class="mess">
+        {% if message %}
+            <h4>{{message}}!</h4>
+        {% endif %}
+        <br />
+        {% if friends %}
+            <section class="photos">
+                <h1 class="title">Friends</h1>
+                <ul>
+                    {% for friend in friends %}
+                        <li>{{friend[0]}} {{friend[2]}} {{friend[3]}} {{friend[4]}}</li>
+                    {% endfor %}
+                </ul>
+            </section>
+        {% else %}
+                <h1 class="title">No Friends</h1>
+        {% endif %}
+    </section>
+    <section class="footer">
+        <div id="logo">
+            <h1>Photoshare</h1>
+        </div>
+    </section>
+</body>
+</html>
