@@ -10,7 +10,7 @@ Then run: python app.py, and open up http://127.0.0.1:5000/ in your web browser 
 
 The system manages the following information:
 
-Users: each user is identified by a unique user id and has the following attributes: first name, last name, email, date of birth, hometown, gender, and password. A user can have a number of Albums.
+   Users: each user is identified by a unique user id and has the following attributes: first name, last name, email, date of    birth, hometown, gender, and password. A user can have a number of Albums.
 
 Friends: each user can have any number of friends. 
 
