@@ -25,6 +25,7 @@ Comments: each comment is identified by a unique comment id and has the followin
 Likes: each user can like a photo, and users can see how many likes are on a photo. 
 
 Files in this repository:
+
 app.py connects to the databse and the the html pages and runs the app capabilities.
 
 schema.sql contains the sql schema(table organization) in the photoshare database.
