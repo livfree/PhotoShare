@@ -1,15 +1,9 @@
 ######################################
-# author ben lawson <balawson@bu.edu> 
-# Edited by: Baichuan Zhou (baichuan@bu.edu) and Craig Einstein <einstein@bu.edu>
-######################################
 # Some code adapted from 
 # CodeHandBook at http://codehandbook.org/python-web-application-development-using-flask-and-mysql/
 # and MaxCountryMan at https://github.com/maxcountryman/flask-login/
 # and Flask Offical Tutorial at  http://flask.pocoo.org/docs/0.10/patterns/fileuploads/
 # see links for further understanding
-###################################################
-#Project authors: Javiar Titus and Olivia Liberti
-#CS460
 ######################################################
 
 import flask
